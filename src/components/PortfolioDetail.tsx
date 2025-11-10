@@ -20,7 +20,23 @@ export default function PortfolioDetail({ project, onClose }: PortfolioDetailPro
           ref={ref}
           className={`bg-white/10 backdrop-blur-lg rounded-3xl overflow-hidden max-w-4xl mx-auto fade-in-up ${isIntersecting ? 'animate-in' : ''}`}
         >
-          {/* Header */}
+          {/* Tombol X di atas judul */}
+          <div className="pt-8 pb-4 px-8 text-center relative">
+            <button
+              type="button"
+              onClick={onClose}
+              className="bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition-all absolute top-0 right-0 mt-2 mr-2 z-10"
+              aria-label="Tutup detail"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <title>Close</title>
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <h1 className="text-3xl md:text-4xl font-bold text-white drop-shadow-lg">{project.title}</h1>
+            <p className="text-xl opacity-90 mt-2 text-white drop-shadow">{project.category}</p>
+          </div>
+          {/* Foto/Carousel di bawah judul */}
           <div className={`relative h-64 bg-gradient-to-br flex items-center justify-center`}>
             <div className="absolute inset-0">
               <Carousel
@@ -30,23 +46,6 @@ export default function PortfolioDetail({ project, onClose }: PortfolioDetailPro
                 autoPlay={true}
                 interval={10000}
               />
-            </div>
-            <div className="absolute top-4 right-4 z-[1000]">
-              <button
-                type="button"
-                onClick={onClose}
-                className="bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition-all"
-                aria-label="Tutup detail"
-              >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <title>Close</title>
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-            <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none z-[900]">
-              <h1 className="text-3xl md:text-4xl font-bold text-white text-center drop-shadow-lg">{project.title}</h1>
-              <p className="text-xl opacity-90 mt-2 text-white text-center drop-shadow">{project.category}</p>
             </div>
           </div>
 
