@@ -4,7 +4,6 @@ import type { Hero } from '@/types';
 import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
 import { smoothScrollTo } from '@/utils/helpers';
 import Image from 'next/image';
-import { useId } from 'react';
 
 interface HeroSectionProps {
   data: Hero;
@@ -12,10 +11,9 @@ interface HeroSectionProps {
 
 export default function HeroSection({ data }: HeroSectionProps) {
   const [ref, isIntersecting] = useIntersectionObserver();
-  const sectionId = useId();
 
   return (
-    <section id={sectionId} className="min-h-screen flex items-center justify-center relative">
+    <section id="beranda" className="min-h-screen flex items-center justify-center relative">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}

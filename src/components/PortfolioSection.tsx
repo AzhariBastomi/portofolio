@@ -1,7 +1,6 @@
  'use client';
 
 import { useState } from 'react';
-import { useId } from 'react';
 import type { PortfolioItem } from '@/types';
 import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
 import PortfolioDetail from './PortfolioDetail';
@@ -33,10 +32,9 @@ export default function PortfolioSection({ data }: PortfolioSectionProps) {
     setSelectedProject(null);
   };
 
-  const sectionId = useId();
   return (
     <>
-      <section id={sectionId} className="min-h-screen py-20 pt-24 relative">
+      <section id="portofolio" className="min-h-screen py-20 pt-24 relative">
         <div className="container mx-auto px-6">
           <div
             ref={ref}
