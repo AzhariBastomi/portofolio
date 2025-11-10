@@ -2,7 +2,8 @@
 
 import type { PortfolioItem } from '@/types';
 import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
-import Image from 'next/image';
+import dynamic from 'next/dynamic';
+const Carousel = dynamic(() => import('./Carousel'), { ssr: false });
 
 interface PortfolioDetailProps {
   project: PortfolioItem;
@@ -21,7 +22,16 @@ export default function PortfolioDetail({ project, onClose }: PortfolioDetailPro
         >
           {/* Header */}
           <div className={`relative h-64 bg-gradient-to-br flex items-center justify-center`}>
-            <div className="absolute top-4 right-4">
+            <div className="absolute inset-0">
+              <Carousel
+                images={project.photos && project.photos.length > 0 ? project.photos : [project.photo ?? '/img/banner.jpg']}
+                alt={project.title}
+                className="w-full h-full"
+                autoPlay={true}
+                interval={10000}
+              />
+            </div>
+            <div className="absolute top-4 right-4 z-[1000]">
               <button
                 type="button"
                 onClick={onClose}
@@ -34,19 +44,9 @@ export default function PortfolioDetail({ project, onClose }: PortfolioDetailPro
                 </svg>
               </button>
             </div>
-            <div className="text-center text-white">
-            <div className="absolute inset-0 -z-10">
-                <Image
-                    src={project.photo ?? '/img/banner.jpg'}
-                    alt={`${project.title} banner`}
-                    fill
-                    className="object-cover w-full h-full"
-                    priority
-                />
-                <div className="absolute inset-0 bg-black/30" />
-            </div>
-              <h1 className="text-3xl md:text-4xl font-bold">{project.title}</h1>
-              <p className="text-xl opacity-90 mt-2">{project.category}</p>
+            <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none z-[900]">
+              <h1 className="text-3xl md:text-4xl font-bold text-white text-center drop-shadow-lg">{project.title}</h1>
+              <p className="text-xl opacity-90 mt-2 text-white text-center drop-shadow">{project.category}</p>
             </div>
           </div>
 

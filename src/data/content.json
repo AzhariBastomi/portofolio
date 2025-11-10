@@ -179,7 +179,13 @@
 				"OpenCV"
 			],
 			"image": "/project-images/sign-language.jpg",
-			"photo": "/img/banner.jpg",
+			"photos": [
+				"/img/banner1.jpg",
+				"/img/banner2.jpg",
+				"/img/banner3.jpg",
+				"/img/banner4.jpg",
+				"/img/banner5.jpg"
+			],
 			"link": "/portfolio/1",
 			"gradient": "from-blue-500 to-purple-600",
 			"icon": "🤟",
@@ -210,7 +216,13 @@
 				"Wireless"
 			],
 			"image": "/project-images/waste-boat.jpg",
-			"photo": "/img/banner.jpg",
+			"photos": [
+				"/img/banner1.jpg",
+				"/img/banner2.jpg",
+				"/img/banner3.jpg",
+				"/img/banner4.jpg",
+				"/img/banner5.jpg"
+			],
 			"link": "/portfolio/2",
 			"gradient": "from-green-500 to-blue-600",
 			"icon": "🚢",
@@ -241,7 +253,13 @@
 				"Compass"
 			],
 			"image": "/project-images/antenna-tracker.jpg",
-			"photo": "/img/banner.jpg",
+			"photos": [
+				"/img/banner1.jpg",
+				"/img/banner2.jpg",
+				"/img/banner3.jpg",
+				"/img/banner4.jpg",
+				"/img/banner5.jpg"
+			],
 			"link": "/portfolio/3",
 			"gradient": "from-purple-500 to-pink-600",
 			"icon": "📡",
@@ -273,7 +291,13 @@
 				"Real-time Data"
 			],
 			"image": "/project-images/covid-robot.jpg",
-			"photo": "/img/banner.jpg",
+			"photos": [
+				"/img/banner1.jpg",
+				"/img/banner2.jpg",
+				"/img/banner3.jpg",
+				"/img/banner4.jpg",
+				"/img/banner5.jpg"
+			],
 			"link": "/portfolio/4",
 			"gradient": "from-red-500 to-orange-600",
 			"icon": "🤖",
@@ -304,7 +328,13 @@
 				"Smart Control"
 			],
 			"image": "/project-images/traffic-light.jpg",
-			"photo": "/img/banner.jpg",
+			"photos": [
+				"/img/banner1.jpg",
+				"/img/banner2.jpg",
+				"/img/banner3.jpg",
+				"/img/banner4.jpg",
+				"/img/banner5.jpg"
+			],
 			"link": "/portfolio/5",
 			"gradient": "from-indigo-500 to-blue-600",
 			"icon": "🚦",
@@ -335,7 +365,13 @@
 				"Audio Processing"
 			],
 			"image": "/project-images/ptt-system.jpg",
-			"photo": "/img/banner.jpg",
+			"photos": [
+				"/img/banner1.jpg",
+				"/img/banner2.jpg",
+				"/img/banner3.jpg",
+				"/img/banner4.jpg",
+				"/img/banner5.jpg"
+			],
 			"link": "/portfolio/6",
 			"gradient": "from-teal-500 to-green-600",
 			"icon": "📻",
@@ -367,7 +403,13 @@
 				"Data Processing"
 			],
 			"image": "/project-images/pressure-flow.jpg",
-			"photo": "/img/banner.jpg",
+			"photos": [
+				"/img/banner1.jpg",
+				"/img/banner2.jpg",
+				"/img/banner3.jpg",
+				"/img/banner4.jpg",
+				"/img/banner5.jpg"
+			],
 			"link": "/portfolio/7",
 			"gradient": "from-orange-500 to-red-600",
 			"icon": "📊",
@@ -398,7 +440,13 @@
 				"Flow Sensors"
 			],
 			"image": "/project-images/medical-gas.jpg",
-			"photo": "/img/banner.jpg",
+			"photos": [
+				"/img/banner1.jpg",
+				"/img/banner2.jpg",
+				"/img/banner3.jpg",
+				"/img/banner4.jpg",
+				"/img/banner5.jpg"
+			],
 			"link": "/portfolio/8",
 			"gradient": "from-cyan-500 to-blue-600",
 			"icon": "🏥",
@@ -432,7 +480,13 @@
 				"Remote Operation"
 			],
 			"image": "/project-images/uvc-robot.jpg",
-			"photo": "/img/banner.jpg",
+			"photos": [
+				"/img/banner1.jpg",
+				"/img/banner2.jpg",
+				"/img/banner3.jpg",
+				"/img/banner4.jpg",
+				"/img/banner5.jpg"
+			],
 			"link": "/portfolio/9",
 			"gradient": "from-violet-500 to-purple-600",
 			"icon": "🤖",
@@ -463,7 +517,13 @@
 				"Industrial Scale"
 			],
 			"image": "/project-images/digital-scale.jpg",
-			"photo": "/img/banner.jpg",
+			"photos": [
+				"/img/banner1.jpg",
+				"/img/banner2.jpg",
+				"/img/banner3.jpg",
+				"/img/banner4.jpg",
+				"/img/banner5.jpg"
+			],
 			"link": "/portfolio/10",
 			"gradient": "from-emerald-500 to-teal-600",
 			"icon": "⚖️",
@@ -494,7 +554,13 @@
 				"Battery Management"
 			],
 			"image": "/project-images/solar-monitoring.jpg",
-			"photo": "/img/banner.jpg",
+			"photos": [
+				"/img/banner1.jpg",
+				"/img/banner2.jpg",
+				"/img/banner3.jpg",
+				"/img/banner4.jpg",
+				"/img/banner5.jpg"
+			],
 			"link": "/portfolio/11",
 			"gradient": "from-yellow-500 to-orange-600",
 			"icon": "☀️",
@@ -526,7 +592,13 @@
 				"Hot Wire Cutting"
 			],
 			"image": "/project-images/foam-cutter.jpg",
-			"photo": "/img/banner.jpg",
+			"photos": [
+				"/img/banner1.jpg",
+				"/img/banner2.jpg",
+				"/img/banner3.jpg",
+				"/img/banner4.jpg",
+				"/img/banner5.jpg"
+			],
 			"link": "/portfolio/12",
 			"gradient": "from-red-500 to-pink-600",
 			"icon": "⚡",
@@ -583,27 +655,27 @@
 		"title": "Mari Berkolaborasi!",
 		"subtitle": "Hubungi saya untuk proyek teknologi inovatif berikutnya",
 		"copyright": "© 2024 Raden Muhammad Azhari Bastomi. Electrical Engineering Portfolio",
-			"socialLinks": [
-				{
-					"name": "Instagram",
-					"url": "https://www.instagram.com/azhari_bastomi/",
-					"icon": "instagram"
-				},
-				{
-					"name": "Facebook",
-					"url": "https://www.facebook.com/azhari.bastomi",
-					"icon": "facebook"
-				},
-				{
-					"name": "GitHub",
-					"url": "https://github.com/Ap0AqPedul1",
-					"icon": "github"
-				},
-				{
-					"name": "LinkedIn",
-					"url": "https://www.linkedin.com/in/azhari-bastomi/",
-					"icon": "linkedin"
-				}
-			]
+		"socialLinks": [
+			{
+				"name": "Instagram",
+				"url": "https://www.instagram.com/azhari_bastomi/",
+				"icon": "instagram"
+			},
+			{
+				"name": "Facebook",
+				"url": "https://www.facebook.com/azhari.bastomi",
+				"icon": "facebook"
+			},
+			{
+				"name": "GitHub",
+				"url": "https://github.com/Ap0AqPedul1",
+				"icon": "github"
+			},
+			{
+				"name": "LinkedIn",
+				"url": "https://www.linkedin.com/in/azhari-bastomi/",
+				"icon": "linkedin"
+			}
+		]
 	}
 }

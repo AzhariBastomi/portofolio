@@ -1,10 +1,11 @@
  'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
+import { useId } from 'react';
 import type { PortfolioItem } from '@/types';
 import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
 import PortfolioDetail from './PortfolioDetail';
+import Image from 'next/image';
 
 interface PortfolioSectionProps {
   data: PortfolioItem[];
@@ -24,6 +25,7 @@ export default function PortfolioSection({ data }: PortfolioSectionProps) {
   };
 
   const handleViewDetail = (project: PortfolioItem) => {
+    console.log('Viewing project:', project);
     setSelectedProject(project);
   };
 
@@ -31,9 +33,10 @@ export default function PortfolioSection({ data }: PortfolioSectionProps) {
     setSelectedProject(null);
   };
 
+  const sectionId = useId();
   return (
     <>
-      <section id="portofolio" className="min-h-screen py-20 pt-24 relative">
+      <section id={sectionId} className="min-h-screen py-20 pt-24 relative">
         <div className="container mx-auto px-6">
           <div
             ref={ref}
@@ -63,8 +66,8 @@ export default function PortfolioSection({ data }: PortfolioSectionProps) {
                     className={`h-48 bg-gradient-to-br ${project.gradient} flex items-center justify-center overflow-hidden`}
                   >
                     <Image
-                      src={project.photo ?? '/img/banner.jpg'}
-                      alt={`${project.title} banner`}
+                      src={project.photos && project.photos.length > 0 ? project.photos[0] : (project.photo ?? '/img/banner.jpg')}
+                      alt={project.title}
                       width={800}
                       height={320}
                       className="w-full h-full object-cover"

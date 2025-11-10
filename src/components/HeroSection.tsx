@@ -3,6 +3,8 @@
 import type { Hero } from '@/types';
 import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
 import { smoothScrollTo } from '@/utils/helpers';
+import Image from 'next/image';
+import { useId } from 'react';
 
 interface HeroSectionProps {
   data: Hero;
@@ -10,9 +12,10 @@ interface HeroSectionProps {
 
 export default function HeroSection({ data }: HeroSectionProps) {
   const [ref, isIntersecting] = useIntersectionObserver();
+  const sectionId = useId();
 
   return (
-    <section id="beranda" className="min-h-screen flex items-center justify-center relative">
+    <section id={sectionId} className="min-h-screen flex items-center justify-center relative">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -48,10 +51,13 @@ export default function HeroSection({ data }: HeroSectionProps) {
                 {/* Profile Photo Container */}
                 <div className="w-80 h-80 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-purple-500 via-pink-500 to-orange-500 p-1 animate-float">
                   <div className="w-full h-full rounded-full bg-white/10 backdrop-blur-lg flex items-center justify-center overflow-hidden">
-                    <img
+                    <Image
                       src="/img/images.jpg"
-                      alt={`${data?.title ?? 'Profile'} photo`}
+                      alt={data?.title ?? 'Profile'}
                       className="w-full h-full object-cover"
+                      width={384}
+                      height={384}
+                      priority
                     />
                   </div>
                 </div>
@@ -66,17 +72,7 @@ export default function HeroSection({ data }: HeroSectionProps) {
         </div>
       </div>
 
-      {/* Scroll Indicator - Only show on hero section */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-float opacity-70 hover:opacity-100 transition-opacity">
-        <button
-          type="button"
-          onClick={() => smoothScrollTo('#pengalaman')}
-          className="w-6 h-10 border-2 border-white rounded-full flex justify-center cursor-pointer focus:outline-none focus:ring-2 focus:ring-white/50"
-          aria-label="Scroll to next section"
-        >
-          <div className="w-1 h-3 bg-white rounded-full mt-2 animate-bounce" />
-        </button>
-      </div>
+      {/* ...existing code... */}
     </section>
   );
 }

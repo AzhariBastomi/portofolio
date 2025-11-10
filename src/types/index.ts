@@ -59,6 +59,7 @@ export interface PortfolioItem {
   gradient: string;
   icon?: string;
   photo?: string;
+  photos?: string[];
   detailDescription: string;
   specifications: string[];
   contributions: string[];
