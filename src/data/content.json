@@ -215,11 +215,6 @@
 			],
 			"image": "/project-images/waste-boat.jpg",
 			"photos": [
-				"/img/banner1.jpg",
-				"/img/banner2.jpg",
-				"/img/banner3.jpg",
-				"/img/banner4.jpg",
-				"/img/banner5.jpg"
 			],
 			"link": "/portfolio/2",
 			"gradient": "from-green-500 to-blue-600",
@@ -252,11 +247,6 @@
 			],
 			"image": "/project-images/antenna-tracker.jpg",
 			"photos": [
-				"/img/banner1.jpg",
-				"/img/banner2.jpg",
-				"/img/banner3.jpg",
-				"/img/banner4.jpg",
-				"/img/banner5.jpg"
 			],
 			"link": "/portfolio/3",
 			"gradient": "from-purple-500 to-pink-600",
@@ -290,11 +280,7 @@
 			],
 			"image": "/project-images/covid-robot.jpg",
 			"photos": [
-				"/img/banner1.jpg",
-				"/img/banner2.jpg",
-				"/img/banner3.jpg",
-				"/img/banner4.jpg",
-				"/img/banner5.jpg"
+				"/img/covid1.jpg"
 			],
 			"link": "/portfolio/4",
 			"gradient": "from-red-500 to-orange-600",
@@ -327,11 +313,7 @@
 			],
 			"image": "/project-images/traffic-light.jpg",
 			"photos": [
-				"/img/banner1.jpg",
-				"/img/banner2.jpg",
-				"/img/banner3.jpg",
-				"/img/banner4.jpg",
-				"/img/banner5.jpg"
+				"/img/detec.jpg"
 			],
 			"link": "/portfolio/5",
 			"gradient": "from-indigo-500 to-blue-600",
@@ -439,11 +421,8 @@
 			],
 			"image": "/project-images/medical-gas.jpg",
 			"photos": [
-				"/img/banner1.jpg",
-				"/img/banner2.jpg",
-				"/img/banner3.jpg",
-				"/img/banner4.jpg",
-				"/img/banner5.jpg"
+				"/img/gas1.jpg",
+				"/img/gas2.jpg"
 			],
 			"link": "/portfolio/8",
 			"gradient": "from-cyan-500 to-blue-600",
@@ -479,11 +458,6 @@
 			],
 			"image": "/project-images/uvc-robot.jpg",
 			"photos": [
-				"/img/banner1.jpg",
-				"/img/banner2.jpg",
-				"/img/banner3.jpg",
-				"/img/banner4.jpg",
-				"/img/banner5.jpg"
 			],
 			"link": "/portfolio/9",
 			"gradient": "from-violet-500 to-purple-600",
